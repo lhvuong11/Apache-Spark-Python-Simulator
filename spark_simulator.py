@@ -34,6 +34,6 @@ print(f"\nMost Visted Page: {highest_page} ({page_counts.loc[highest_page]} visi
 avg_time = df.groupby('Page')['Duration'].mean()
 
 print("\nAverage Time Spent Per Page:")
-for time in avg_time.index:
-    print(f"{time} - {avg_time.loc[time]:.2f} sec")
+for page in avg_time.index:
+    print(f"{page} - {avg_time.loc[page]:.2f} sec")
 
