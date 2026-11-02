@@ -7,7 +7,9 @@ Apache Spark is a fast and scalable framework for processing large datasets. Unl
 ## Why is Spark Important?
 
 ✅ Speed: Processes data 100x faster than MapReduce for certain workloads.
+
 ✅ Ease of Use: Supports SQL queries, structured data, and machine learning.
+
 ✅ Real-Time Processing: Can handle live data streams, unlike batch-only systems like MapReduce.
 
 ## How Does Spark Work?
