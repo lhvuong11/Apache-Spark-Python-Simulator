@@ -17,7 +17,7 @@ df = pd.DataFrame(data)
 
 # 2.1: calculate the total time spent per user
 total_time = df.groupby('UserID').sum()  # simulating Spark's groupBy().sum() operation  
-user_list = total_time.index.tolist()
+user_list = total_time.index.tolist()  # saving the users ID into a list to print
 print("\nTotal Time Spent Per User:")
 
 for id in user_list:
@@ -26,10 +26,14 @@ for id in user_list:
 
 # 2.2: find the most visted page using a group-by operation
 page_counts = df.groupby('Page').size()
-highest_page = page_counts.idxmax()
+highest_page = page_counts.idxmax()  #returns highest 'Page' element
 print(f"\nMost Visted Page: {highest_page} ({page_counts.loc[highest_page]} visits)")
 
 
-
-
 # 2.3: compute the average time spent per page
+avg_time = df.groupby('Page')['Duration'].mean()
+
+print("\nAverage Time Spent Per Page:")
+for time in avg_time.index:
+    print(f"{time} - {avg_time.loc[time]:.2f} sec")
+
