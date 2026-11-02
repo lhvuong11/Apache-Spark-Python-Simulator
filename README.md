@@ -7,7 +7,9 @@ Apache Spark is a fast and scalable framework for processing large datasets. Unl
 ## Why is Spark Important?
 
 ✅ Speed: Processes data 100x faster than MapReduce for certain workloads.
+
 ✅ Ease of Use: Supports SQL queries, structured data, and machine learning.
+
 ✅ Real-Time Processing: Can handle live data streams, unlike batch-only systems like MapReduce.
 
 ## How Does Spark Work?
@@ -21,7 +23,7 @@ You are given a dataset containing information about website visits. Each row re
 Your task is to simulate Spark-like transformations using Pandas to analyze the data.
 
 ### Tasks
-
+```
 1. Load the data into a Pandas DataFrame (simulating a Spark DataFrame).
 2. Perform the following Spark-like transformations:
 
@@ -32,3 +34,4 @@ Your task is to simulate Spark-like transformations using Pandas to analyze the 
     Compute the average time spent per page.
 
 3. Output the final results in a readable format.
+``` 
