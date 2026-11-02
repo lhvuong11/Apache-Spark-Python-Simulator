@@ -21,7 +21,7 @@ You are given a dataset containing information about website visits. Each row re
 Your task is to simulate Spark-like transformations using Pandas to analyze the data.
 
 ### Tasks
-
+```
 1. Load the data into a Pandas DataFrame (simulating a Spark DataFrame).
 2. Perform the following Spark-like transformations:
 
@@ -32,3 +32,4 @@ Your task is to simulate Spark-like transformations using Pandas to analyze the 
     Compute the average time spent per page.
 
 3. Output the final results in a readable format.
+``` 
