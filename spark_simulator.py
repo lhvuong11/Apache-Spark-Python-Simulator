@@ -25,5 +25,11 @@ for id in user_list:
 #print(f"User {user_list}: {total_time['Duration']}")
 
 # 2.2: find the most visted page using a group-by operation
+page_counts = df.groupby('Page').size()
+highest_page = page_counts.idxmax()
+print(f"\nMost Visted Page: {highest_page} ({page_counts.loc[highest_page]} visits)")
+
+
+
 
 # 2.3: compute the average time spent per page
